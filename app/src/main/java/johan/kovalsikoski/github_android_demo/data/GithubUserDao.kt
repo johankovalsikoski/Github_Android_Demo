@@ -12,4 +12,5 @@ interface GithubUserDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertUser(user: GithubUserEntity)
+
 }
